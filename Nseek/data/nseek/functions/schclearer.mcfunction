@@ -5,3 +5,4 @@ schedule clear border:250
 schedule clear border:100
 schedule clear border:50
 schedule clear border:1
+schedule clear nseek:endgame
