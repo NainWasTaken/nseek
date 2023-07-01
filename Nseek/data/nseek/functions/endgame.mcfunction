@@ -6,3 +6,4 @@ scoreboard players set @a nseekDeathcount 0
 function nseek:schclearer
 effect clear @a
 gamemode adventure @a
+team join spectator @a
