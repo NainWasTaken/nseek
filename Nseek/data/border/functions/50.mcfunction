@@ -1,0 +1,2 @@
+worldborder set 50 90
+title @a actionbar ["",{"text":"-=","bold":true,"color":"red"},{"text":"00","bold":true,"obfuscated":true,"color":"red"},{"text":" Border is shrinking NOW!!! ","bold":true,"color":"red"},{"text":"OO","bold":true,"obfuscated":true,"color":"red"},{"text":"=-","bold":true,"color":"red"}]

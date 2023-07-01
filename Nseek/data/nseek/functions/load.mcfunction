@@ -16,7 +16,6 @@ scoreboard objectives add nseekDeathcount deathCount
 scoreboard objectives add nseekRandomisebordercentre dummy
 scoreboard objectives add nseekNickvisibilty dummy
 scoreboard objectives add nseekBordersize dummy
-scoreboard objectives add nseekMatchsize dummy
 
 
 # Sets default values for scoreboards
@@ -25,7 +24,6 @@ scoreboard players set @a nseekDeathcount 0
 scoreboard players set @a nseekRandomisebordercentre 1
 scoreboard players set @a nseekNickvisibilty 2
 scoreboard players set @a nseekBordersize 2
-scoreboard players set @a nseekMatchsize 1
 
 # Creates and sets correct settings for teams
 team add seekers "Seekers"
