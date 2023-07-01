@@ -6,4 +6,4 @@ execute as @a if score @s nseekGamerunning matches 1 if score @s nseekDeathcount
 execute as @a if score @s nseekGamerunning matches 1 run clear @a
 
 # Other stuff
-execute if score @s nseekGamerunning matches 0 run team join spectator @a
+execute as @a if score @s nseekGamerunning matches 0 run team join spectator @s
