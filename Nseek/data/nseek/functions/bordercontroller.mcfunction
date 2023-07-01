@@ -5,7 +5,7 @@ execute if score @s nseekRandomisebordercentre matches 1 run summon armor_stand 
 execute if score @s nseekRandomisebordercentre matches 1 run spreadplayers ~ ~ 0 150 false @e[type=armor_stand,tag=random_pillar]
 execute if score @s nseekRandomisebordercentre matches 1 run execute at @e[type=armor_stand,tag=random_pillar] run worldborder center ~ ~
 execute if score @s nseekRandomisebordercentre matches 1 run execute at @e[type=armor_stand,tag=random_pillar] run setworldspawn ~ ~100 ~
-execute if score @s nseekRandomisebordercentre matches 1 run execute at @e[type=armor_stand,tag=random_pillar] run spreadplayers ~ ~ 0 80 false @a[team=hiders]
+execute if score @s nseekRandomisebordercentre matches 1 run execute at @e[type=armor_stand,tag=random_pillar] run spreadplayers ~ ~ 0 50 false @a[team=hiders]
 execute if score @s nseekRandomisebordercentre matches 1 run kill @e[type=armor_stand,tag=random_pillar]
 
 # Set first border for specified size
