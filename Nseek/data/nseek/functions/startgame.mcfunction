@@ -1,13 +1,13 @@
 # Function that starts the game
 function nseek:nametagcontroller
-scoreboard players set @a nseekGamerunning 1
-scoreboard players set @a nseekDeathcount 0
 
 team join hiders @a
 team join seekers @r
 function nseek:bordercontroller
 kill @a[team=seekers]
 
+scoreboard players set @a nseekGamerunning 1
+scoreboard players set @a nseekDeathcount 0
 schedule function nseek:seekereffects 2t replace
 schedule function nseek:seekermsg 60s replace
 

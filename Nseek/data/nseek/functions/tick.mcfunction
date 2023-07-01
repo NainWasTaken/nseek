@@ -4,3 +4,6 @@ execute as @a if score @s nseekGamerunning matches 1 if score @s nseekDeathcount
 
 # Clears the inventory of players so they cant get stuff
 execute as @a if score @s nseekGamerunning matches 1 run clear @a
+
+# Other stuff
+execute if score @s nseekGamerunning matches 0 run team join spectator @a
