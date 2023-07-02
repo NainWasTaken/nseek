@@ -1,12 +1,16 @@
 # This function is suppposed to be run every time with the start game function to start correct border schedules
 
 # Randomises border centre if needed, also sets spawnpoint in the centre for the seeker
-execute if score @s nseekRandomisebordercentre matches 1 run summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Tags:["random_pillar"]}
+summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Tags:["random_pillar"]}
 execute if score @s nseekRandomisebordercentre matches 1 run spreadplayers ~ ~ 0 150 false @e[type=armor_stand,tag=random_pillar]
-execute if score @s nseekRandomisebordercentre matches 1 run execute at @e[type=armor_stand,tag=random_pillar] run worldborder center ~ ~
-execute if score @s nseekRandomisebordercentre matches 1 run execute at @e[type=armor_stand,tag=random_pillar] run setworldspawn ~ ~100 ~
-execute if score @s nseekRandomisebordercentre matches 1 run execute at @e[type=armor_stand,tag=random_pillar] run spreadplayers ~ ~ 0 50 false @a[team=hiders]
-execute if score @s nseekRandomisebordercentre matches 1 run kill @e[type=armor_stand,tag=random_pillar]
+execute at @e[type=armor_stand,tag=random_pillar] run worldborder center ~ ~
+execute at @e[type=armor_stand,tag=random_pillar] run setworldspawn ~ ~100 ~
+execute if score @s nseekBordersize matches 0 run execute at @e[type=armor_stand,tag=random_pillar] run spreadplayers ~ ~ 0 50 false @a[team=hiders]
+execute if score @s nseekBordersize matches 1 run execute at @e[type=armor_stand,tag=random_pillar] run spreadplayers ~ ~ 0 125 false @a[team=hiders]
+execute if score @s nseekBordersize matches 2 run execute at @e[type=armor_stand,tag=random_pillar] run spreadplayers ~ ~ 0 200 false @a[team=hiders]
+execute if score @s nseekBordersize matches 3 run execute at @e[type=armor_stand,tag=random_pillar] run spreadplayers ~ ~ 0 300 false @a[team=hiders]
+execute if score @s nseekBordersize matches 4 run execute at @e[type=armor_stand,tag=random_pillar] run spreadplayers ~ ~ 0 500 false @a[team=hiders]
+kill @e[type=armor_stand,tag=random_pillar]
 
 # Set first border for specified size
 execute if score @s nseekBordersize matches 0 run worldborder set 100
