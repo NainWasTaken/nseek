@@ -40,4 +40,4 @@ team modify spectators nametagVisibility always
 team join spectators @a
 
 # Load/Reload welcome message :)
-tellraw @a {"text":"Nseek loaded!","color":"light_purple","hoverEvent":{"action":"show_text","contents":["Running V2.1 (Release)"]}}
+tellraw @a {"text":"Nseek loaded!","color":"light_purple","hoverEvent":{"action":"show_text","contents":["Running V1.0 (Release)"]}}
