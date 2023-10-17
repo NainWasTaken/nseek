@@ -17,4 +17,5 @@ To configure the game settings run
 ```/function nseek:settings```
 
 > It should look like this:
-> ![image](https://github.com/NainWasTaken/nseek/assets/66695621/6c86a9c4-002a-4b1a-a71c-e67b226de9b3)
+> ![image](https://github.com/NainWasTaken/nseek/assets/66695621/bcc95ebc-30f5-49ed-8411-2c8fbf41c058)
+
